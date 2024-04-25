@@ -27,6 +27,12 @@
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
           {% if user.is_authenticated %}
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'add_record' %}">Add Record</a>
+          </li>
+
+
           <li class="nav-item">
             <a class="nav-item-logout" href="{% url 'logout' %}">Logout</a>
           </li>
